@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  ul{
+      display: none;
+    }
+    
+    input:checked  ~ ul{
+      display:block;
+    }
+    input {
+      display: none;
+     }
+     label {
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid rgb(233, 222, 222);
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+    label:hover{
+      background: rgb(87, 184, 240);
+    }
+    
+    /* Estilo del boton cuando el menú está expandido*/
+    input:checked ~ label {
+      background: lightgrey; 
+    }
+    ul{
+      margin-top:0;
+      padding: 0;
+      width: 200px;
+    
+    }
+     li {
+      display: block;
+      background: rgb(137, 223, 238);
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      border-bottom: 1px solid rgb(165, 229, 231);
+    }
+    li:hover {
+      filter: brightness(110%);
+    }
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      .custom-table th, .custom-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      
+      .custom-table th {
+        background-color: #f2f2f2;
+      }
+      

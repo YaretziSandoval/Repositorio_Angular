@@ -1,31 +1,53 @@
 body {
-    font-family: "font-family: 'Roboto', sans-serif;"
-    
-}
-header {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    background-color: #003CFF; 
-    color: #fff; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-nav {
-    text-align: center; 
-}
-
-ul {
-    list-style: none; 
-    padding: 0; 
-}
-
-li {
-    display: inline; 
-    margin: 0 20px; 
-}
-
-a {
-    text-decoration: none; 
-    color: #fff; 
-}
+ul{
+    display: none;
+  }
+  
+  input:checked  ~ ul{
+    display:block;
+  }
+  input {
+    display: none;
+   }
+   label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid rgb(233, 222, 222);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+  label:hover{
+    background: rgb(87, 184, 240);
+  }
+  
+  /* Estilo del boton cuando el menú está expandido*/
+  input:checked ~ label {
+    background: lightgrey; 
+  }
+  ul{
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+  
+  }
+   li {
+    display: block;
+    background: rgb(137, 223, 238);
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid rgb(165, 229, 231);
+  }
+  li:hover {
+    filter: brightness(110%);
+  }
