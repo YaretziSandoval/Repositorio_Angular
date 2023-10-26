@@ -27,7 +27,7 @@ body {
       user-select: none;
     }
     label:hover{
-      background: rgb(87, 184, 240);
+      background: rgb(127, 192, 230);
     }
     
     /* Estilo del boton cuando el menú está expandido*/
@@ -65,4 +65,12 @@ body {
       .custom-table th {
         background-color: #f2f2f2;
       }
+      table {
+        width: 50%;
+      }
+      section {
+        display: table;
+      }
+      
+
       
